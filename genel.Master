@@ -1,0 +1,178 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="genel.master.vb" Inherits="eticaret.genel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>TPR Parfüme </title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/productCard.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <%--    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />--%>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="header" id="header">
+                <nav class="navbar container">
+                    <%--<a href="#" class="brand">Brand</a>--%>
+                    <a href="/">
+                        <img class="navlogo" src="assets/images/tpr100.svg" /></a>
+                    <div class="search">
+                        <div class="search-form">
+                            <input type="text" name="search" class="search-input" placeholder="Aradığınız ürün, kategori veya markayı yazınız" autofocus autocomplete="off">
+                            <button type="submit" class="search-submit" disabled><i class="bx bx-search"></i></button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul style="display: flex; list-style: none; justify-content: space-evenly;">
+                            <li class="menuli"><a href="giris.aspx" class="menua"><i class="bi bi-person"></i>Giriş Yap</a></li>
+                            <li class="menuli"><a href="favoriler.aspx" class="menua"><i class="bi bi-heart"></i>Favoriler</a></li>
+                            <li class="menuli"><a href="sepet.aspx" class="menua"><i class="bi bi-cart"></i>Sepet</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <section id="footer">
+            <footer class="main-footer">
+                <div class="container">
+                    <!--Widgets Section-->
+                    <div class="widgets-section">
+                        <div class="row clearfix">
+
+                            <!--Column-->
+                            <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                        <div class="footer-widget about-widget">
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="assets/images/tprlogo.png"
+                                                        style="width: 200px; height: 100px;" alt="" /></a>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor
+                                                incididunt ut labore dolore magna aliqua enim ad minim veniam.
+                                                </p>
+                                                <p>
+                                                    Quis nostrud exercitation ullam aboris nisi aliquip exea commodo
+                                                consequat duis aute irure.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Column-->
+                            <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                        <div class="footer-widget links-widget">
+                                            <h2>TPR Ticaret</h2>
+                                            <ul class="footer-list">
+                                                <li><a href="#">Anasayfa</a></li>
+                                                <li><a href="#">Hakkımızda</a></li>
+                                                <li><a href="iletisim.aspx">İletişim</a></li>
+                                                <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+                                                <li><a href="#">Gizlilik ve Çerez politikaları</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="footer-widget info-widget">
+                                            <h2>İletişim</h2>
+                                            <ul class="info-list">
+                                                <li>Ocakcı Holding, 10049. Sk. No:6 K:1, 35620 Atatürk Osb/Çiğli/İzmir</li>
+                                                <li><a href="tel:+902329710267" style="text-decoration: none; color: #8a8d91;">(0232) 971 02 67</a></li>
+                                                <li><a href="mailto:info@tpr.net.tr" style="text-decoration: none; color: #8a8d91;">info@tpr.net.tr</a></li>
+                                            </ul>
+                                            <!-- Social Links -->
+                                            <ul class="social-links">
+                                                <li class="google"><a href="#"><span
+                                                    class="fab fa-google-plus-g"></span></a></li>
+                                                <li class="facebook"><a href="#"><span class="fab fa-facebook-f"></span></a>
+                                                </li>
+                                                <li class="instagram"><a href="#"><span class="fab fa-instagram"></span></a>
+                                                </li>
+                                                <li class="twitter"><a href="#"><span class="fab fa-twitter"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row clearfix">
+
+                            <div class="column col-lg-6 col-md-12 col-sm-12">
+                                <div class="copyright">
+                                    <a href="https://tpr.net.tr/" style="text-decoration: none;"><span
+                                        class="theme_color" style="color: red;">TPRSofware</span></a> &copy; 2023 All
+                                Right Reserved
+                                </div>
+                            </div>
+                            <div class="column col-lg-6 col-md-12 col-sm-12">
+                                <ul class="footer-nav">
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </section>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <!-- <script src="js/slider.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="js/headerSlider.js"></script>
+
+</body>
+</html>

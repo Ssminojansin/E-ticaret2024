@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{276342CD-32BC-4F81-A7C2-B6560411B5D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eticaret</RootNamespace>
+    <AssemblyName>eticaret</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44360</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eticaret.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>eticaret.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\anasayfa.aspx" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\assets\img\apple-touch-icon.png" />
+    <Content Include="Admin\assets\img\card.jpg" />
+    <Content Include="Admin\assets\img\favicon.png" />
+    <Content Include="Admin\assets\img\logo.png" />
+    <Content Include="Admin\assets\img\messages-1.jpg" />
+    <Content Include="Admin\assets\img\messages-2.jpg" />
+    <Content Include="Admin\assets\img\messages-3.jpg" />
+    <Content Include="Admin\assets\img\news-1.jpg" />
+    <Content Include="Admin\assets\img\news-2.jpg" />
+    <Content Include="Admin\assets\img\news-3.jpg" />
+    <Content Include="Admin\assets\img\news-4.jpg" />
+    <Content Include="Admin\assets\img\news-5.jpg" />
+    <Content Include="Admin\assets\img\not-found.svg" />
+    <Content Include="Admin\assets\img\product-1.jpg" />
+    <Content Include="Admin\assets\img\product-2.jpg" />
+    <Content Include="Admin\assets\img\product-3.jpg" />
+    <Content Include="Admin\assets\img\product-4.jpg" />
+    <Content Include="Admin\assets\img\product-5.jpg" />
+    <Content Include="Admin\assets\img\profile-img.jpg" />
+    <Content Include="Admin\assets\img\slides-1.jpg" />
+    <Content Include="Admin\assets\img\slides-2.jpg" />
+    <Content Include="Admin\assets\img\slides-3.jpg" />
+    <Content Include="Admin\assets\js\main.js" />
+    <Content Include="Admin\assets\scss\Readme.txt" />
+    <Content Include="Admin\assets\vendor\apexcharts\apexcharts.amd.js" />
+    <Content Include="Admin\assets\vendor\apexcharts\apexcharts.common.js" />
+    <Content Include="Admin\assets\vendor\apexcharts\apexcharts.css" />
+    <Content Include="Admin\assets\vendor\apexcharts\apexcharts.esm.js" />
+    <Content Include="Admin\assets\vendor\apexcharts\apexcharts.js" />
+    <Content Include="Admin\assets\vendor\apexcharts\apexcharts.min.js" />
+    <Content Include="Admin\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="Admin\assets\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="assets\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Include="assets\images\212her.png" />
+    <Content Include="assets\images\allien.png" />
+    <Content Include="assets\images\armanisi.png" />
+    <Content Include="assets\images\blackoptium.png" />
+    <Content Include="assets\images\caroline.png" />
+    <Content Include="assets\images\cartier.png" />
+    <Content Include="assets\images\chanelno5.png" />
+    <Content Include="assets\images\ciceksiparfum.png" />
+    <Content Include="assets\images\cocochn.png" />
+    <Content Include="assets\images\erkekparfm.jpg" />
+    <Content Include="assets\images\giris.jpg" />
+    <Content Include="assets\images\giris.png" />
+    <Content Include="assets\images\giris1.jpg" />
+    <Content Include="assets\images\giris2.jpg" />
+    <Content Include="assets\images\giris2.png" />
+    <Content Include="assets\images\gucci.png" />
+    <Content Include="assets\images\guvenliodeme.png" />
+    <Content Include="assets\images\he.png" />
+    <Content Include="assets\images\headerfoto.jpg" />
+    <Content Include="assets\images\headerfoto1.jpg" />
+    <Content Include="assets\images\hizlikargo.png" />
+    <Content Include="assets\images\hk.png" />
+    <Content Include="assets\images\hk1.jpg" />
+    <Content Include="assets\images\hk2.jpg" />
+    <Content Include="assets\images\hk3.jpg" />
+    <Content Include="assets\images\hk4.jpg" />
+    <Content Include="assets\images\hk5.jpg" />
+    <Content Include="assets\images\hk6.png" />
+    <Content Include="assets\images\hkk.jpg" />
+    <Content Include="assets\images\hugoboss.png" />
+    <Content Include="assets\images\kadinparfum.jpg" />
+    <Content Include="assets\images\kapidaniade.png" />
+    <Content Include="assets\images\kulanimkolaylig.png" />
+    <Content Include="assets\images\ladimillion.png" />
+    <Content Include="assets\images\libre.png" />
+    <Content Include="assets\images\missdior.png" />
+    <Content Include="assets\images\odakokusu.png" />
+    <Content Include="assets\images\odunsu.png" />
+    <Content Include="assets\images\odunsuparfum.png" />
+    <Content Include="assets\images\paradise.png" />
+    <Content Include="assets\images\parfmm.png" />
+    <Content Include="assets\images\parfumler.png" />
+    <Content Include="assets\images\poison.png" />
+    <Content Include="assets\images\prds.png" />
+    <Content Include="assets\images\rabonne.png" />
+    <Content Include="assets\images\tpr100.svg" />
+    <Content Include="assets\images\tprlogo.png" />
+    <Content Include="assets\images\valentino.png" />
+    <Content Include="assets\images\versace.png" />
+    <Content Include="css\about.css" />
+    <Content Include="css\erkekparfum.css" />
+    <Content Include="css\favoriler.css" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\giris.css" />
+    <Content Include="css\hakkimizda.css" />
+    <Content Include="css\iletisim.css" />
+    <Content Include="css\kadinparfum.css" />
+    <Content Include="css\parfumdetay.css" />
+    <Content Include="css\productCard.css" />
+    <Content Include="css\sepet.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="erkek-parfumleri.aspx" />
+    <Content Include="favoriler.aspx" />
+    <Content Include="giris.aspx" />
+    <Content Include="hakkimizda.aspx" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="js\about.js" />
+    <Content Include="js\cart.js" />
+    <Content Include="js\header.js" />
+    <Content Include="js\headerSlider.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\parfumdetay.js" />
+    <Content Include="js\parfumsort.js" />
+    <Content Include="js\sidebartoggle.js" />
+    <Content Include="js\slider.js" />
+    <Content Include="kadin-parfumleri.aspx" />
+    <Content Include="parfum-detay.aspx" />
+    <Content Include="sepet.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\anasayfa.aspx.designer.vb">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\anasayfa.aspx.vb">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="erkek-parfumleri.aspx.designer.vb">
+      <DependentUpon>erkek-parfumleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="erkek-parfumleri.aspx.vb">
+      <DependentUpon>erkek-parfumleri.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="favoriler.aspx.designer.vb">
+      <DependentUpon>favoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="favoriler.aspx.vb">
+      <DependentUpon>favoriler.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="genel.Master.designer.vb">
+      <DependentUpon>genel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="genel.Master.vb">
+      <DependentUpon>genel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giris.aspx.designer.vb">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giris.aspx.vb">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="hakkimizda.aspx.designer.vb">
+      <DependentUpon>hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hakkimizda.aspx.vb">
+      <DependentUpon>hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.vb">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.vb">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kadin-parfumleri.aspx.designer.vb">
+      <DependentUpon>kadin-parfumleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kadin-parfumleri.aspx.vb">
+      <DependentUpon>kadin-parfumleri.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="parfum-detay.aspx.designer.vb">
+      <DependentUpon>parfum-detay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parfum-detay.aspx.vb">
+      <DependentUpon>parfum-detay.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sepet.aspx.designer.vb">
+      <DependentUpon>sepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sepet.aspx.vb">
+      <DependentUpon>sepet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="genel.Master" />
+    <Content Include="assets\images\l1.webp" />
+    <Content Include="assets\images\resim1.webp" />
+    <Content Include="assets\images\resim22.webp" />
+    <Content Include="assets\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="assets\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Include="assets\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="assets\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="assets\images\headerfoto2.avif" />
+    <Content Include="assets\images\haederfoto3.webp" />
+    <Content Include="assets\images\header4.webp" />
+    <Content Include="Admin\admin.Master" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ar.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ca.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\cs.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\da.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\de.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\el.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\en.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\es.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\et.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\fa.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\fi.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\fr.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\he.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\hi.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\hr.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\hu.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\hy.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\id.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\it.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ja.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ka.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ko.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\lt.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\lv.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ms.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\nb.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\nl.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\pl.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\pt-br.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\pt.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\rs.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ru.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\se.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\sk.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\sl.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\sq.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\th.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\tr.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\ua.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\zh-cn.json" />
+    <Content Include="Admin\assets\vendor\apexcharts\locales\zh-tw.json" />
+    <Content Include="Admin\assets\vendor\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="Admin\assets\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Include="Admin\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="Admin\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Admin\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\assets\vendor\boxicons\css\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57351</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44360/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
